@@ -12,10 +12,15 @@
 
 # Run project
 - rails s
+- Project will run on http://localhost:3000/ "this is hello ruby" (dummy)
+- You should go http://localhost:3000/recipes for index
 
-Project will run on http://localhost:3000/ "this is hello ruby" (dummy)
+# Gems, i added
+- http
+- rspec-rails (still in progress, didnt finish tests yet)
+- byebug (*binding.pry*)
+- awesome_print
 
-you should go http://localhost:3000/recipes for index
 
-You can check there!
+
 
