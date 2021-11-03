@@ -13,7 +13,7 @@
 # Run project
 - rails s
 
-Project will run on http://localhost:3000/ "this is hello ruby"
+Project will run on http://localhost:3000/ "this is hello ruby" (dummy)
 
 you should go http://localhost:3000/recipes for index
 
