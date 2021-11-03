@@ -23,7 +23,7 @@ class Recipe < ApplicationRecord
       end
     end
 
-    if !response.parse(:json).dig("includes", "Asses").nil?
+    if !response.parse(:json).dig("includes", "Asset").nil?
       response.parse(:json)["includes"]["Asset"].each do |item|
         @images.push(item)
       end
