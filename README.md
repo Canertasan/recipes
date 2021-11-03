@@ -9,6 +9,9 @@
 * Run project
 - rails s
 
-Project will run on http://localhost:3000/
+Project will run on http://localhost:3000/ "this is hello ruby"
+
+you should go http://localhost:3000/recipes for index
 
 You can check there!
+

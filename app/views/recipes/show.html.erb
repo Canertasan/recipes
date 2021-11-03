@@ -1,0 +1,16 @@
+<h1>Recipe</h1>
+ 
+
+<td><%= @recipe.title %></td>
+<td><img src=<%= @recipe.image %> alt="rss feed" /></td>
+<% @recipe.tags.each do |tag| %>
+  <td><%= tag %></td>
+<% end %>
+<hr>
+<td><%= @recipe.description %></td>
+<hr>
+<td><%= @recipe.chef_name %></td>
+<td><a href= "/recipes">Back</a></td>
+
+ 
+<br />

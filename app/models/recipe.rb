@@ -3,7 +3,7 @@ require "http"
 class Recipe < ApplicationRecord
   SECRETS = Rails.application.secrets
 
-  def self.get_recipes
+  def self.get_and_save_recipes
     response = HTTP.get("https://cdn.contentful.com/spaces/#{SECRETS.space_id}/entries?access_token=#{SECRETS.access_token}")
     @recipes = []
     @images = []

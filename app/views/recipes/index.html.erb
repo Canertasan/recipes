@@ -1,1 +1,13 @@
 <h1>Listing Recipes</h1>
+ 
+<table> 
+<% @recipes.each do |recipe| %>
+  <tr>
+    <td><%= recipe.title %></td>
+    <td><img src=<%= recipe.image %> alt="rss feed" /></td>
+    <td><a href=<%= "recipes/#{recipe.marley_spoon_recipe_id}"%>>Show</a></td>
+  </tr>
+<% end %>
+</table>
+ 
+<br />
