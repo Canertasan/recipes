@@ -5,3 +5,10 @@
 
 * Database creation
 - rails db:prepare
+
+* Run project
+- rails s
+
+Project will run on http://localhost:3000/
+
+You can check there!
