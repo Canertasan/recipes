@@ -3,8 +3,12 @@
 * Ruby version 2.6.6
 * Rails version Rails 6.1.4.1
 
+* After you clone the project
+bundle
+
 * Database creation
 - rails db:prepare
+- rails db:migrate && rails db:migrate RAILS_ENV=test
 
 * Run project
 - rails s
