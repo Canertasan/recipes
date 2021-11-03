@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 2021_11_03_174659) do
   enable_extension "plpgsql"
 
   create_table "recipes", id: :serial, force: :cascade do |t|
+    t.string "marley_spoon_recipe_id"
     t.string "title"
     t.string "image"
     t.string "tags", default: [], array: true
