@@ -1,5 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Recipe, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it 'validate recipe' do
+    i = FactoryBot.build(:recipe)
+    expect(i).to be_valid
+  end
 end

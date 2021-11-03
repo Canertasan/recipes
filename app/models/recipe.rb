@@ -10,19 +10,23 @@ class Recipe < ApplicationRecord
     @tags = []
     @chefs = []
 
-    response.parse(:json)["items"].each do |item|
-      item_type = item.dig("sys", "contentType", "sys", "id")
-      if item_type == "recipe"
-        @recipes.push(item)
-      elsif item_type == "tag"
-        @tags.push(item)
-      elsif item_type == "chef"
-        @chefs.push(item)
+    if response.parse(:json)["items"]
+      response.parse(:json)["items"].each do |item|
+        item_type = item.dig("sys", "contentType", "sys", "id")
+        if item_type == "recipe"
+          @recipes.push(item)
+        elsif item_type == "tag"
+          @tags.push(item)
+        elsif item_type == "chef"
+          @chefs.push(item)
+        end
       end
     end
 
-    response.parse(:json)["includes"]["Asset"].each do |item|
-      @images.push(item)
+    if !response.parse(:json).dig("includes", "Asses").nil?
+      response.parse(:json)["includes"]["Asset"].each do |item|
+        @images.push(item)
+      end
     end
 
     created_recipes = []
@@ -78,7 +82,7 @@ class Recipe < ApplicationRecord
   def self.find_chef_or_tag_name(current_id, type)
     search_arr = if type == "chef"
                @chefs
-             elsif type = "tag"
+             elsif type == "tag"
                @tags
              end
 

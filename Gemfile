@@ -28,6 +28,8 @@ gem "http"
 
 gem 'rspec-rails', '~> 5.0.0'
 
+gem 'factory_bot_rails'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
