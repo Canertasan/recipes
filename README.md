@@ -17,7 +17,7 @@
 
 # Gems, i added
 - http
-- rspec-rails (still in progress, didnt finish tests yet)
+- rspec-rails / factory_bot_rails / database_cleaner-active_record
 - byebug (*binding.pry*)
 - awesome_print
 
