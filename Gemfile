@@ -27,8 +27,12 @@ gem 'pry-rails'
 gem "http"
 
 gem 'rspec-rails', '~> 5.0.0'
-
 gem 'factory_bot_rails'
+
+# Gemfile
+group :test do
+  gem 'database_cleaner-active_record'
+end
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
