@@ -1,15 +1,19 @@
 # README
 
-* Ruby version 2.6.6
-* Rails version Rails 6.1.4.1
+# Ruby version 2.6.6
+# Rails version Rails 6.1.4.1 
 
-* Database creation
+# After you clone the project 
+- bundle
+
+# Database creation
 - rails db:prepare
+- rails db:migrate && rails db:migrate RAILS_ENV=test
 
-* Run project
+# Run project
 - rails s
 
-Project will run on http://localhost:3000/ "this is hello ruby"
+Project will run on http://localhost:3000/ "this is hello ruby" (dummy)
 
 you should go http://localhost:3000/recipes for index
 
