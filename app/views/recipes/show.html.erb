@@ -1,7 +1,4 @@
-<h1>Recipe</h1>
- 
-
-<td><%= @recipe.title %></td>
+<h1><%= @recipe.title %></h1>
 <td><img src=<%= @recipe.image %> alt="rss feed" /></td>
 <% @recipe.tags.each do |tag| %>
   <td><%= tag %></td>
